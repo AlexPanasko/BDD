@@ -20,7 +20,7 @@ public class TransferPage {
         transferHead.shouldBe(Condition.visible);
     }
 
-    private void makeTransfer(String amountToTransfer, DataHelper.CardInfo cardInfo) {
+    public void makeTransfer(String amountToTransfer, DataHelper.CardInfo cardInfo) {
         amount.setValue(amountToTransfer);
         fromAmount.setValue(cardInfo.getCardNumber());
         amountButton.click();
